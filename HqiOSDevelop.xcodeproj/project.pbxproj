@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8ED9897620521D1500CBE329 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9897520521D1500CBE329 /* AppDelegate.m */; };
+		8ED9897C20521D1500CBE329 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED9897A20521D1500CBE329 /* Main.storyboard */; };
+		8ED9897E20521D1500CBE329 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ED9897D20521D1500CBE329 /* Assets.xcassets */; };
+		8ED9898120521D1500CBE329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8ED9897F20521D1500CBE329 /* LaunchScreen.storyboard */; };
+		8ED9898420521D1500CBE329 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9898320521D1500CBE329 /* main.m */; };
+		8ED9898D20521D9A00CBE329 /* HqRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9898C20521D9A00CBE329 /* HqRootVC.m */; };
+		8ED989922052210100CBE329 /* HqThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989912052210100CBE329 /* HqThread.m */; };
+		8ED989972052213900CBE329 /* HqRunloop.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989952052213800CBE329 /* HqRunloop.m */; };
+		8ED989982052213900CBE329 /* HqSynInvokeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989962052213800CBE329 /* HqSynInvokeManager.m */; };
+		8ED989A3205223E100CBE329 /* HqMatrixCodeScanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9899A205223E100CBE329 /* HqMatrixCodeScanVC.m */; };
+		8ED989A4205223E100CBE329 /* HqCamarePreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9899D205223E100CBE329 /* HqCamarePreView.m */; };
+		8ED989A5205223E100CBE329 /* HqCamareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED9899E205223E100CBE329 /* HqCamareVC.m */; };
+		8ED989A6205223E100CBE329 /* UIImage+HqInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989A2205223E100CBE329 /* UIImage+HqInfo.m */; };
+		8ED989A92052241500CBE329 /* HqSystemCamare.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989A82052241500CBE329 /* HqSystemCamare.m */; };
+		8ED989AD20522A1600CBE329 /* HqGestureLockVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989AC20522A1600CBE329 /* HqGestureLockVC.m */; };
+		8ED989B020522A2200CBE329 /* GestureLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989AE20522A2200CBE329 /* GestureLockView.m */; };
+		8ED989B420522BB300CBE329 /* HqDrawVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989B220522BB300CBE329 /* HqDrawVC.m */; };
+		8ED989C320522CD600CBE329 /* CFSocketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989B720522CD600CBE329 /* CFSocketVC.m */; };
+		8ED989C420522CD600CBE329 /* HqSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989B820522CD600CBE329 /* HqSocketManager.m */; };
+		8ED989C520522CD600CBE329 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989BA20522CD600CBE329 /* GCDAsyncUdpSocket.m */; };
+		8ED989C620522CD600CBE329 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989BB20522CD600CBE329 /* GCDAsyncSocket.m */; };
+		8ED989C720522CD600CBE329 /* BSDSocketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989BE20522CD600CBE329 /* BSDSocketVC.m */; };
+		8ED989C820522CD600CBE329 /* HqScoketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989BF20522CD600CBE329 /* HqScoketVC.m */; };
+		8ED989D120522DA900CBE329 /* HqRefreshVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989CD20522DA900CBE329 /* HqRefreshVC.m */; };
+		8ED989D220522DA900CBE329 /* HqRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989D020522DA900CBE329 /* HqRefreshHeaderView.m */; };
+		8ED989D920522E7700CBE329 /* ServerSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989D520522E7700CBE329 /* ServerSocket.m */; };
+		8ED989DA20522E7700CBE329 /* ClientSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989D620522E7700CBE329 /* ClientSocket.m */; };
+		8ED989DB20522E7700CBE329 /* GNASocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989D720522E7700CBE329 /* GNASocket.m */; };
+		8ED989ED2052308400CBE329 /* ViscosityLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989E12052308400CBE329 /* ViscosityLayout.m */; };
+		8ED989EE2052308400CBE329 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989E22052308400CBE329 /* LineLayout.m */; };
+		8ED989EF2052308400CBE329 /* HqLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989E62052308400CBE329 /* HqLineLayout.m */; };
+		8ED989F02052308400CBE329 /* HqColletionLayoutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989E72052308400CBE329 /* HqColletionLayoutVC.m */; };
+		8ED989F12052308400CBE329 /* HqCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989EA2052308400CBE329 /* HqCollectionViewCell.m */; };
+		8ED989F22052308400CBE329 /* HqCcustomLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989EC2052308400CBE329 /* HqCcustomLayout.m */; };
+		8ED98A1A205231E300CBE329 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989F8205231E200CBE329 /* GCDWebServerResponse.m */; };
+		8ED98A1B205231E300CBE329 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989FB205231E200CBE329 /* GCDWebServerRequest.m */; };
+		8ED98A1C205231E300CBE329 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989FE205231E200CBE329 /* GCDWebServerFunctions.m */; };
+		8ED98A1D205231E300CBE329 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED989FF205231E200CBE329 /* GCDWebServer.m */; };
+		8ED98A1E205231E300CBE329 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED98A00205231E200CBE329 /* GCDWebServerConnection.m */; };
+		8ED98A1F205231E300CBE329 /* GCDWebServerErrorResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED98A05205231E200CBE329 /* GCDWebServerErrorResponse.m */; };
+		8ED98A20205231E300CBE329 /* GCDWebServerFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED98A07205231E200CBE329 /* GCDWebServerFileResponse.m */; };
+		8ED98A21205231E300CBE329 /* GCDWebServerDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED98A08205231E200CBE329 /* GCDWebServerDataResponse.m */; };
+		8ED98A22205231E300CBE329 /* GCDWebServerStreamedResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED98A0A205231E200CBE329 /* GCDWebServerStreamedResponse.m */; };
+		8ED98A23205231E300CBE329 /* GCDWebServerURLEncodedFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED98A0F205231E200CBE329 /* GCDWebServerURLEncodedFormRequest.m */; };
+		8ED98A24205231E300CBE329 /* GCDWebServerMultiPartFormRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED98A10205231E200CBE329 /* GCDWebServerMultiPartFormRequest.m */; };
+		8ED98A25205231E300CBE329 /* GCDWebServerDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED98A11205231E200CBE329 /* GCDWebServerDataRequest.m */; };
+		8ED98A26205231E300CBE329 /* GCDWebServerFileRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED98A12205231E200CBE329 /* GCDWebServerFileRequest.m */; };
+		8ED98A27205231E300CBE329 /* GCDWebUploader.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8ED98A16205231E200CBE329 /* GCDWebUploader.bundle */; };
+		8ED98A28205231E300CBE329 /* GCDWebUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED98A18205231E200CBE329 /* GCDWebUploader.m */; };
+		8ED98A29205231E300CBE329 /* HqWebServerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED98A19205231E200CBE329 /* HqWebServerVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8ED9897120521D1500CBE329 /* HqiOSDevelop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HqiOSDevelop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED9897420521D1500CBE329 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8ED9897520521D1500CBE329 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8ED9897B20521D1500CBE329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8ED9897D20521D1500CBE329 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8ED9898020521D1500CBE329 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8ED9898220521D1500CBE329 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED9898320521D1500CBE329 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8ED9898B20521D9A00CBE329 /* HqRootVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqRootVC.h; sourceTree = "<group>"; };
+		8ED9898C20521D9A00CBE329 /* HqRootVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqRootVC.m; sourceTree = "<group>"; };
+		8ED989902052210100CBE329 /* HqThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqThread.h; sourceTree = "<group>"; };
+		8ED989912052210100CBE329 /* HqThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqThread.m; sourceTree = "<group>"; };
+		8ED989932052213800CBE329 /* HqSynInvokeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqSynInvokeManager.h; sourceTree = "<group>"; };
+		8ED989942052213800CBE329 /* HqRunloop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqRunloop.h; sourceTree = "<group>"; };
+		8ED989952052213800CBE329 /* HqRunloop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqRunloop.m; sourceTree = "<group>"; };
+		8ED989962052213800CBE329 /* HqSynInvokeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqSynInvokeManager.m; sourceTree = "<group>"; };
+		8ED9899A205223E100CBE329 /* HqMatrixCodeScanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqMatrixCodeScanVC.m; sourceTree = "<group>"; };
+		8ED9899B205223E100CBE329 /* HqMatrixCodeScanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqMatrixCodeScanVC.h; sourceTree = "<group>"; };
+		8ED9899D205223E100CBE329 /* HqCamarePreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqCamarePreView.m; sourceTree = "<group>"; };
+		8ED9899E205223E100CBE329 /* HqCamareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqCamareVC.m; sourceTree = "<group>"; };
+		8ED9899F205223E100CBE329 /* UIImage+HqInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HqInfo.h"; sourceTree = "<group>"; };
+		8ED989A0205223E100CBE329 /* HqCamareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqCamareVC.h; sourceTree = "<group>"; };
+		8ED989A1205223E100CBE329 /* HqCamarePreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqCamarePreView.h; sourceTree = "<group>"; };
+		8ED989A2205223E100CBE329 /* UIImage+HqInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HqInfo.m"; sourceTree = "<group>"; };
+		8ED989A72052241500CBE329 /* HqSystemCamare.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqSystemCamare.h; sourceTree = "<group>"; };
+		8ED989A82052241500CBE329 /* HqSystemCamare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqSystemCamare.m; sourceTree = "<group>"; };
+		8ED989AB20522A1600CBE329 /* HqGestureLockVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HqGestureLockVC.h; sourceTree = "<group>"; };
+		8ED989AC20522A1600CBE329 /* HqGestureLockVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HqGestureLockVC.m; sourceTree = "<group>"; };
+		8ED989AE20522A2200CBE329 /* GestureLockView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureLockView.m; sourceTree = "<group>"; };
+		8ED989AF20522A2200CBE329 /* GestureLockView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureLockView.h; sourceTree = "<group>"; };
+		8ED989B220522BB300CBE329 /* HqDrawVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqDrawVC.m; sourceTree = "<group>"; };
+		8ED989B320522BB300CBE329 /* HqDrawVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqDrawVC.h; sourceTree = "<group>"; };
+		8ED989B620522CD600CBE329 /* HqScoketVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqScoketVC.h; sourceTree = "<group>"; };
+		8ED989B720522CD600CBE329 /* CFSocketVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFSocketVC.m; sourceTree = "<group>"; };
+		8ED989B820522CD600CBE329 /* HqSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqSocketManager.m; sourceTree = "<group>"; };
+		8ED989BA20522CD600CBE329 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		8ED989BB20522CD600CBE329 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		8ED989BC20522CD600CBE329 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		8ED989BD20522CD600CBE329 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		8ED989BE20522CD600CBE329 /* BSDSocketVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSDSocketVC.m; sourceTree = "<group>"; };
+		8ED989BF20522CD600CBE329 /* HqScoketVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqScoketVC.m; sourceTree = "<group>"; };
+		8ED989C020522CD600CBE329 /* HqSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqSocketManager.h; sourceTree = "<group>"; };
+		8ED989C120522CD600CBE329 /* CFSocketVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFSocketVC.h; sourceTree = "<group>"; };
+		8ED989C220522CD600CBE329 /* BSDSocketVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSDSocketVC.h; sourceTree = "<group>"; };
+		8ED989CD20522DA900CBE329 /* HqRefreshVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqRefreshVC.m; sourceTree = "<group>"; };
+		8ED989CE20522DA900CBE329 /* HqRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqRefreshHeaderView.h; sourceTree = "<group>"; };
+		8ED989CF20522DA900CBE329 /* HqRefreshVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqRefreshVC.h; sourceTree = "<group>"; };
+		8ED989D020522DA900CBE329 /* HqRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqRefreshHeaderView.m; sourceTree = "<group>"; };
+		8ED989D320522E7600CBE329 /* GNASocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNASocket.h; sourceTree = "<group>"; };
+		8ED989D420522E7700CBE329 /* ServerSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerSocket.h; sourceTree = "<group>"; };
+		8ED989D520522E7700CBE329 /* ServerSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerSocket.m; sourceTree = "<group>"; };
+		8ED989D620522E7700CBE329 /* ClientSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientSocket.m; sourceTree = "<group>"; };
+		8ED989D720522E7700CBE329 /* GNASocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNASocket.m; sourceTree = "<group>"; };
+		8ED989D820522E7700CBE329 /* ClientSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSocket.h; sourceTree = "<group>"; };
+		8ED989E12052308400CBE329 /* ViscosityLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViscosityLayout.m; sourceTree = "<group>"; };
+		8ED989E22052308400CBE329 /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
+		8ED989E32052308400CBE329 /* HqColletionLayoutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqColletionLayoutVC.h; sourceTree = "<group>"; };
+		8ED989E42052308400CBE329 /* HqCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqCollectionViewCell.h; sourceTree = "<group>"; };
+		8ED989E52052308400CBE329 /* HqCcustomLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqCcustomLayout.h; sourceTree = "<group>"; };
+		8ED989E62052308400CBE329 /* HqLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqLineLayout.m; sourceTree = "<group>"; };
+		8ED989E72052308400CBE329 /* HqColletionLayoutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqColletionLayoutVC.m; sourceTree = "<group>"; };
+		8ED989E82052308400CBE329 /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
+		8ED989E92052308400CBE329 /* ViscosityLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViscosityLayout.h; sourceTree = "<group>"; };
+		8ED989EA2052308400CBE329 /* HqCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqCollectionViewCell.m; sourceTree = "<group>"; };
+		8ED989EB2052308400CBE329 /* HqLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqLineLayout.h; sourceTree = "<group>"; };
+		8ED989EC2052308400CBE329 /* HqCcustomLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqCcustomLayout.m; sourceTree = "<group>"; };
+		8ED989F6205231E200CBE329 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
+		8ED989F7205231E200CBE329 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		8ED989F8205231E200CBE329 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		8ED989F9205231E200CBE329 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		8ED989FA205231E200CBE329 /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		8ED989FB205231E200CBE329 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		8ED989FC205231E200CBE329 /* GCDWebServerHTTPStatusCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerHTTPStatusCodes.h; sourceTree = "<group>"; };
+		8ED989FD205231E200CBE329 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		8ED989FE205231E200CBE329 /* GCDWebServerFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFunctions.m; sourceTree = "<group>"; };
+		8ED989FF205231E200CBE329 /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		8ED98A00205231E200CBE329 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		8ED98A01205231E200CBE329 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		8ED98A03205231E200CBE329 /* GCDWebServerFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileResponse.h; sourceTree = "<group>"; };
+		8ED98A04205231E200CBE329 /* GCDWebServerStreamedResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerStreamedResponse.h; sourceTree = "<group>"; };
+		8ED98A05205231E200CBE329 /* GCDWebServerErrorResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerErrorResponse.m; sourceTree = "<group>"; };
+		8ED98A06205231E200CBE329 /* GCDWebServerDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataResponse.h; sourceTree = "<group>"; };
+		8ED98A07205231E200CBE329 /* GCDWebServerFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileResponse.m; sourceTree = "<group>"; };
+		8ED98A08205231E200CBE329 /* GCDWebServerDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataResponse.m; sourceTree = "<group>"; };
+		8ED98A09205231E200CBE329 /* GCDWebServerErrorResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerErrorResponse.h; sourceTree = "<group>"; };
+		8ED98A0A205231E200CBE329 /* GCDWebServerStreamedResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerStreamedResponse.m; sourceTree = "<group>"; };
+		8ED98A0C205231E200CBE329 /* GCDWebServerDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerDataRequest.h; sourceTree = "<group>"; };
+		8ED98A0D205231E200CBE329 /* GCDWebServerMultiPartFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerMultiPartFormRequest.h; sourceTree = "<group>"; };
+		8ED98A0E205231E200CBE329 /* GCDWebServerFileRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFileRequest.h; sourceTree = "<group>"; };
+		8ED98A0F205231E200CBE329 /* GCDWebServerURLEncodedFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerURLEncodedFormRequest.m; sourceTree = "<group>"; };
+		8ED98A10205231E200CBE329 /* GCDWebServerMultiPartFormRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerMultiPartFormRequest.m; sourceTree = "<group>"; };
+		8ED98A11205231E200CBE329 /* GCDWebServerDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerDataRequest.m; sourceTree = "<group>"; };
+		8ED98A12205231E200CBE329 /* GCDWebServerFileRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerFileRequest.m; sourceTree = "<group>"; };
+		8ED98A13205231E200CBE329 /* GCDWebServerURLEncodedFormRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerURLEncodedFormRequest.h; sourceTree = "<group>"; };
+		8ED98A14205231E200CBE329 /* HqWebServerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HqWebServerVC.h; sourceTree = "<group>"; };
+		8ED98A16205231E200CBE329 /* GCDWebUploader.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GCDWebUploader.bundle; sourceTree = "<group>"; };
+		8ED98A17205231E200CBE329 /* GCDWebUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebUploader.h; sourceTree = "<group>"; };
+		8ED98A18205231E200CBE329 /* GCDWebUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebUploader.m; sourceTree = "<group>"; };
+		8ED98A19205231E200CBE329 /* HqWebServerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqWebServerVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8ED9896E20521D1500CBE329 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8ED9896820521D1500CBE329 = {
+			isa = PBXGroup;
+			children = (
+				8ED9897320521D1500CBE329 /* HqiOSDevelop */,
+				8ED9897220521D1500CBE329 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8ED9897220521D1500CBE329 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8ED9897120521D1500CBE329 /* HqiOSDevelop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8ED9897320521D1500CBE329 /* HqiOSDevelop */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989F3205231E200CBE329 /* HqiOSWebServer */,
+				8ED989E02052308400CBE329 /* HqConlletionLayout */,
+				8ED989CC20522DA900CBE329 /* HqRefresh */,
+				8ED989B520522CD600CBE329 /* HqScoket */,
+				8ED989B120522BA400CBE329 /* HqDraw */,
+				8ED989AA205229FC00CBE329 /* HqGestureLock */,
+				8ED9898F20521F4200CBE329 /* HqThread */,
+				8ED9898E20521EF300CBE329 /* HqCamera */,
+				8ED9897420521D1500CBE329 /* AppDelegate.h */,
+				8ED9897520521D1500CBE329 /* AppDelegate.m */,
+				8ED9898B20521D9A00CBE329 /* HqRootVC.h */,
+				8ED9898C20521D9A00CBE329 /* HqRootVC.m */,
+				8ED9897A20521D1500CBE329 /* Main.storyboard */,
+				8ED9897D20521D1500CBE329 /* Assets.xcassets */,
+				8ED9897F20521D1500CBE329 /* LaunchScreen.storyboard */,
+				8ED9898220521D1500CBE329 /* Info.plist */,
+				8ED9898320521D1500CBE329 /* main.m */,
+			);
+			path = HqiOSDevelop;
+			sourceTree = "<group>";
+		};
+		8ED9898E20521EF300CBE329 /* HqCamera */ = {
+			isa = PBXGroup;
+			children = (
+				8ED9899C205223E100CBE329 /* HqCamare */,
+				8ED98999205223E100CBE329 /* HqMatrixCode */,
+				8ED989A72052241500CBE329 /* HqSystemCamare.h */,
+				8ED989A82052241500CBE329 /* HqSystemCamare.m */,
+			);
+			path = HqCamera;
+			sourceTree = "<group>";
+		};
+		8ED9898F20521F4200CBE329 /* HqThread */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989942052213800CBE329 /* HqRunloop.h */,
+				8ED989952052213800CBE329 /* HqRunloop.m */,
+				8ED989932052213800CBE329 /* HqSynInvokeManager.h */,
+				8ED989962052213800CBE329 /* HqSynInvokeManager.m */,
+				8ED989902052210100CBE329 /* HqThread.h */,
+				8ED989912052210100CBE329 /* HqThread.m */,
+			);
+			path = HqThread;
+			sourceTree = "<group>";
+		};
+		8ED98999205223E100CBE329 /* HqMatrixCode */ = {
+			isa = PBXGroup;
+			children = (
+				8ED9899A205223E100CBE329 /* HqMatrixCodeScanVC.m */,
+				8ED9899B205223E100CBE329 /* HqMatrixCodeScanVC.h */,
+			);
+			path = HqMatrixCode;
+			sourceTree = "<group>";
+		};
+		8ED9899C205223E100CBE329 /* HqCamare */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989A1205223E100CBE329 /* HqCamarePreView.h */,
+				8ED9899D205223E100CBE329 /* HqCamarePreView.m */,
+				8ED989A0205223E100CBE329 /* HqCamareVC.h */,
+				8ED9899E205223E100CBE329 /* HqCamareVC.m */,
+				8ED9899F205223E100CBE329 /* UIImage+HqInfo.h */,
+				8ED989A2205223E100CBE329 /* UIImage+HqInfo.m */,
+			);
+			path = HqCamare;
+			sourceTree = "<group>";
+		};
+		8ED989AA205229FC00CBE329 /* HqGestureLock */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989AF20522A2200CBE329 /* GestureLockView.h */,
+				8ED989AE20522A2200CBE329 /* GestureLockView.m */,
+				8ED989AB20522A1600CBE329 /* HqGestureLockVC.h */,
+				8ED989AC20522A1600CBE329 /* HqGestureLockVC.m */,
+			);
+			path = HqGestureLock;
+			sourceTree = "<group>";
+		};
+		8ED989B120522BA400CBE329 /* HqDraw */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989B320522BB300CBE329 /* HqDrawVC.h */,
+				8ED989B220522BB300CBE329 /* HqDrawVC.m */,
+			);
+			path = HqDraw;
+			sourceTree = "<group>";
+		};
+		8ED989B520522CD600CBE329 /* HqScoket */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989DC20522E7B00CBE329 /* CS */,
+				8ED989C220522CD600CBE329 /* BSDSocketVC.h */,
+				8ED989BE20522CD600CBE329 /* BSDSocketVC.m */,
+				8ED989C120522CD600CBE329 /* CFSocketVC.h */,
+				8ED989B720522CD600CBE329 /* CFSocketVC.m */,
+				8ED989B920522CD600CBE329 /* GCDAsyncSocket */,
+				8ED989B620522CD600CBE329 /* HqScoketVC.h */,
+				8ED989BF20522CD600CBE329 /* HqScoketVC.m */,
+				8ED989C020522CD600CBE329 /* HqSocketManager.h */,
+				8ED989B820522CD600CBE329 /* HqSocketManager.m */,
+			);
+			path = HqScoket;
+			sourceTree = "<group>";
+		};
+		8ED989B920522CD600CBE329 /* GCDAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989BA20522CD600CBE329 /* GCDAsyncUdpSocket.m */,
+				8ED989BB20522CD600CBE329 /* GCDAsyncSocket.m */,
+				8ED989BC20522CD600CBE329 /* GCDAsyncUdpSocket.h */,
+				8ED989BD20522CD600CBE329 /* GCDAsyncSocket.h */,
+			);
+			path = GCDAsyncSocket;
+			sourceTree = "<group>";
+		};
+		8ED989CC20522DA900CBE329 /* HqRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989CD20522DA900CBE329 /* HqRefreshVC.m */,
+				8ED989CE20522DA900CBE329 /* HqRefreshHeaderView.h */,
+				8ED989CF20522DA900CBE329 /* HqRefreshVC.h */,
+				8ED989D020522DA900CBE329 /* HqRefreshHeaderView.m */,
+			);
+			path = HqRefresh;
+			sourceTree = "<group>";
+		};
+		8ED989DC20522E7B00CBE329 /* CS */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989D820522E7700CBE329 /* ClientSocket.h */,
+				8ED989D620522E7700CBE329 /* ClientSocket.m */,
+				8ED989D320522E7600CBE329 /* GNASocket.h */,
+				8ED989D720522E7700CBE329 /* GNASocket.m */,
+				8ED989D420522E7700CBE329 /* ServerSocket.h */,
+				8ED989D520522E7700CBE329 /* ServerSocket.m */,
+			);
+			path = CS;
+			sourceTree = "<group>";
+		};
+		8ED989E02052308400CBE329 /* HqConlletionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989E12052308400CBE329 /* ViscosityLayout.m */,
+				8ED989E22052308400CBE329 /* LineLayout.m */,
+				8ED989E32052308400CBE329 /* HqColletionLayoutVC.h */,
+				8ED989E42052308400CBE329 /* HqCollectionViewCell.h */,
+				8ED989E52052308400CBE329 /* HqCcustomLayout.h */,
+				8ED989E62052308400CBE329 /* HqLineLayout.m */,
+				8ED989E72052308400CBE329 /* HqColletionLayoutVC.m */,
+				8ED989E82052308400CBE329 /* LineLayout.h */,
+				8ED989E92052308400CBE329 /* ViscosityLayout.h */,
+				8ED989EA2052308400CBE329 /* HqCollectionViewCell.m */,
+				8ED989EB2052308400CBE329 /* HqLineLayout.h */,
+				8ED989EC2052308400CBE329 /* HqCcustomLayout.m */,
+			);
+			path = HqConlletionLayout;
+			sourceTree = "<group>";
+		};
+		8ED989F3205231E200CBE329 /* HqiOSWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				8ED98A14205231E200CBE329 /* HqWebServerVC.h */,
+				8ED98A19205231E200CBE329 /* HqWebServerVC.m */,
+				8ED989F4205231E200CBE329 /* GCDWebServer */,
+				8ED98A15205231E200CBE329 /* GCDWebUploader */,
+			);
+			path = HqiOSWebServer;
+			sourceTree = "<group>";
+		};
+		8ED989F4205231E200CBE329 /* GCDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989F5205231E200CBE329 /* Core */,
+				8ED98A02205231E200CBE329 /* Responses */,
+				8ED98A0B205231E200CBE329 /* Requests */,
+			);
+			path = GCDWebServer;
+			sourceTree = "<group>";
+		};
+		8ED989F5205231E200CBE329 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8ED989F6205231E200CBE329 /* GCDWebServerFunctions.h */,
+				8ED989F7205231E200CBE329 /* GCDWebServerPrivate.h */,
+				8ED989F8205231E200CBE329 /* GCDWebServerResponse.m */,
+				8ED989F9205231E200CBE329 /* GCDWebServerConnection.h */,
+				8ED989FA205231E200CBE329 /* GCDWebServer.h */,
+				8ED989FB205231E200CBE329 /* GCDWebServerRequest.m */,
+				8ED989FC205231E200CBE329 /* GCDWebServerHTTPStatusCodes.h */,
+				8ED989FD205231E200CBE329 /* GCDWebServerResponse.h */,
+				8ED989FE205231E200CBE329 /* GCDWebServerFunctions.m */,
+				8ED989FF205231E200CBE329 /* GCDWebServer.m */,
+				8ED98A00205231E200CBE329 /* GCDWebServerConnection.m */,
+				8ED98A01205231E200CBE329 /* GCDWebServerRequest.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8ED98A02205231E200CBE329 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				8ED98A03205231E200CBE329 /* GCDWebServerFileResponse.h */,
+				8ED98A04205231E200CBE329 /* GCDWebServerStreamedResponse.h */,
+				8ED98A05205231E200CBE329 /* GCDWebServerErrorResponse.m */,
+				8ED98A06205231E200CBE329 /* GCDWebServerDataResponse.h */,
+				8ED98A07205231E200CBE329 /* GCDWebServerFileResponse.m */,
+				8ED98A08205231E200CBE329 /* GCDWebServerDataResponse.m */,
+				8ED98A09205231E200CBE329 /* GCDWebServerErrorResponse.h */,
+				8ED98A0A205231E200CBE329 /* GCDWebServerStreamedResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		8ED98A0B205231E200CBE329 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				8ED98A0C205231E200CBE329 /* GCDWebServerDataRequest.h */,
+				8ED98A0D205231E200CBE329 /* GCDWebServerMultiPartFormRequest.h */,
+				8ED98A0E205231E200CBE329 /* GCDWebServerFileRequest.h */,
+				8ED98A0F205231E200CBE329 /* GCDWebServerURLEncodedFormRequest.m */,
+				8ED98A10205231E200CBE329 /* GCDWebServerMultiPartFormRequest.m */,
+				8ED98A11205231E200CBE329 /* GCDWebServerDataRequest.m */,
+				8ED98A12205231E200CBE329 /* GCDWebServerFileRequest.m */,
+				8ED98A13205231E200CBE329 /* GCDWebServerURLEncodedFormRequest.h */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		8ED98A15205231E200CBE329 /* GCDWebUploader */ = {
+			isa = PBXGroup;
+			children = (
+				8ED98A16205231E200CBE329 /* GCDWebUploader.bundle */,
+				8ED98A17205231E200CBE329 /* GCDWebUploader.h */,
+				8ED98A18205231E200CBE329 /* GCDWebUploader.m */,
+			);
+			path = GCDWebUploader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8ED9897020521D1500CBE329 /* HqiOSDevelop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ED9898720521D1500CBE329 /* Build configuration list for PBXNativeTarget "HqiOSDevelop" */;
+			buildPhases = (
+				8ED9896D20521D1500CBE329 /* Sources */,
+				8ED9896E20521D1500CBE329 /* Frameworks */,
+				8ED9896F20521D1500CBE329 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HqiOSDevelop;
+			productName = HqiOSDevelop;
+			productReference = 8ED9897120521D1500CBE329 /* HqiOSDevelop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8ED9896920521D1500CBE329 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = macpro;
+				TargetAttributes = {
+					8ED9897020521D1500CBE329 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8ED9896C20521D1500CBE329 /* Build configuration list for PBXProject "HqiOSDevelop" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8ED9896820521D1500CBE329;
+			productRefGroup = 8ED9897220521D1500CBE329 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8ED9897020521D1500CBE329 /* HqiOSDevelop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8ED9896F20521D1500CBE329 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED9898120521D1500CBE329 /* LaunchScreen.storyboard in Resources */,
+				8ED98A27205231E300CBE329 /* GCDWebUploader.bundle in Resources */,
+				8ED9897E20521D1500CBE329 /* Assets.xcassets in Resources */,
+				8ED9897C20521D1500CBE329 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8ED9896D20521D1500CBE329 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED989EE2052308400CBE329 /* LineLayout.m in Sources */,
+				8ED98A24205231E300CBE329 /* GCDWebServerMultiPartFormRequest.m in Sources */,
+				8ED989A6205223E100CBE329 /* UIImage+HqInfo.m in Sources */,
+				8ED989B420522BB300CBE329 /* HqDrawVC.m in Sources */,
+				8ED98A1A205231E300CBE329 /* GCDWebServerResponse.m in Sources */,
+				8ED989C820522CD600CBE329 /* HqScoketVC.m in Sources */,
+				8ED989A4205223E100CBE329 /* HqCamarePreView.m in Sources */,
+				8ED989DB20522E7700CBE329 /* GNASocket.m in Sources */,
+				8ED98A1B205231E300CBE329 /* GCDWebServerRequest.m in Sources */,
+				8ED98A22205231E300CBE329 /* GCDWebServerStreamedResponse.m in Sources */,
+				8ED989ED2052308400CBE329 /* ViscosityLayout.m in Sources */,
+				8ED989C720522CD600CBE329 /* BSDSocketVC.m in Sources */,
+				8ED98A26205231E300CBE329 /* GCDWebServerFileRequest.m in Sources */,
+				8ED989F02052308400CBE329 /* HqColletionLayoutVC.m in Sources */,
+				8ED98A23205231E300CBE329 /* GCDWebServerURLEncodedFormRequest.m in Sources */,
+				8ED9898420521D1500CBE329 /* main.m in Sources */,
+				8ED9897620521D1500CBE329 /* AppDelegate.m in Sources */,
+				8ED989C520522CD600CBE329 /* GCDAsyncUdpSocket.m in Sources */,
+				8ED989C620522CD600CBE329 /* GCDAsyncSocket.m in Sources */,
+				8ED989C320522CD600CBE329 /* CFSocketVC.m in Sources */,
+				8ED989922052210100CBE329 /* HqThread.m in Sources */,
+				8ED9898D20521D9A00CBE329 /* HqRootVC.m in Sources */,
+				8ED989972052213900CBE329 /* HqRunloop.m in Sources */,
+				8ED98A25205231E300CBE329 /* GCDWebServerDataRequest.m in Sources */,
+				8ED989EF2052308400CBE329 /* HqLineLayout.m in Sources */,
+				8ED989D120522DA900CBE329 /* HqRefreshVC.m in Sources */,
+				8ED989D920522E7700CBE329 /* ServerSocket.m in Sources */,
+				8ED98A1F205231E300CBE329 /* GCDWebServerErrorResponse.m in Sources */,
+				8ED989C420522CD600CBE329 /* HqSocketManager.m in Sources */,
+				8ED989F22052308400CBE329 /* HqCcustomLayout.m in Sources */,
+				8ED989F12052308400CBE329 /* HqCollectionViewCell.m in Sources */,
+				8ED989A3205223E100CBE329 /* HqMatrixCodeScanVC.m in Sources */,
+				8ED98A21205231E300CBE329 /* GCDWebServerDataResponse.m in Sources */,
+				8ED98A1E205231E300CBE329 /* GCDWebServerConnection.m in Sources */,
+				8ED989DA20522E7700CBE329 /* ClientSocket.m in Sources */,
+				8ED989A92052241500CBE329 /* HqSystemCamare.m in Sources */,
+				8ED98A1D205231E300CBE329 /* GCDWebServer.m in Sources */,
+				8ED98A29205231E300CBE329 /* HqWebServerVC.m in Sources */,
+				8ED989982052213900CBE329 /* HqSynInvokeManager.m in Sources */,
+				8ED989D220522DA900CBE329 /* HqRefreshHeaderView.m in Sources */,
+				8ED989B020522A2200CBE329 /* GestureLockView.m in Sources */,
+				8ED989AD20522A1600CBE329 /* HqGestureLockVC.m in Sources */,
+				8ED98A20205231E300CBE329 /* GCDWebServerFileResponse.m in Sources */,
+				8ED98A1C205231E300CBE329 /* GCDWebServerFunctions.m in Sources */,
+				8ED989A5205223E100CBE329 /* HqCamareVC.m in Sources */,
+				8ED98A28205231E300CBE329 /* GCDWebUploader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8ED9897A20521D1500CBE329 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ED9897B20521D1500CBE329 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8ED9897F20521D1500CBE329 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8ED9898020521D1500CBE329 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8ED9898520521D1500CBE329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8ED9898620521D1500CBE329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8ED9898820521D1500CBE329 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34AC3PEMF7;
+				INFOPLIST_FILE = HqiOSDevelop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhq.HqiOSDevelop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8ED9898920521D1500CBE329 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 34AC3PEMF7;
+				INFOPLIST_FILE = HqiOSDevelop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hhq.HqiOSDevelop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8ED9896C20521D1500CBE329 /* Build configuration list for PBXProject "HqiOSDevelop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED9898520521D1500CBE329 /* Debug */,
+				8ED9898620521D1500CBE329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ED9898720521D1500CBE329 /* Build configuration list for PBXNativeTarget "HqiOSDevelop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8ED9898820521D1500CBE329 /* Debug */,
+				8ED9898920521D1500CBE329 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8ED9896920521D1500CBE329 /* Project object */;
+}
