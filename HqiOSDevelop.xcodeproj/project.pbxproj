@@ -159,6 +159,7 @@
 		8ED98A17205231E200CBE329 /* GCDWebUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebUploader.h; sourceTree = "<group>"; };
 		8ED98A18205231E200CBE329 /* GCDWebUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebUploader.m; sourceTree = "<group>"; };
 		8ED98A19205231E200CBE329 /* HqWebServerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HqWebServerVC.m; sourceTree = "<group>"; };
+		8ED98A3B2057C17A00CBE329 /* HqiOSDevelop-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HqiOSDevelop-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +208,7 @@
 				8ED9897D20521D1500CBE329 /* Assets.xcassets */,
 				8ED9897F20521D1500CBE329 /* LaunchScreen.storyboard */,
 				8ED9898220521D1500CBE329 /* Info.plist */,
+				8ED98A3B2057C17A00CBE329 /* HqiOSDevelop-Prefix.pch */,
 				8ED9898320521D1500CBE329 /* main.m */,
 			);
 			path = HqiOSDevelop;
@@ -682,6 +684,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34AC3PEMF7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HqiOSDevelop/HqiOSDevelop-Prefix.pch";
 				INFOPLIST_FILE = HqiOSDevelop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -697,6 +701,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 34AC3PEMF7;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HqiOSDevelop/HqiOSDevelop-Prefix.pch";
 				INFOPLIST_FILE = HqiOSDevelop/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -24,7 +24,6 @@ static HqSynInvokeManager *_invokeManager = nil;
 }
 + (void)initialize{
     NSLog(@"initialize");
-//    [HqSynInvokeManager sharedInstance];
 }
 + (instancetype)sharedInstance{
     static dispatch_once_t onceToken;

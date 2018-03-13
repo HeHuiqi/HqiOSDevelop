@@ -1,0 +1,14 @@
+//
+//  HqiOSDevelop-Prefix.pch
+//  HqiOSDevelop
+//
+//  Created by macpro on 2018/3/13.
+//  Copyright © 2018年 macpro. All rights reserved.
+//
+
+#ifndef HqiOSDevelop_Prefix_pch
+#define HqiOSDevelop_Prefix_pch
+
+#define NSLog(s, ...) NSLog(@"\n%s-%d:%@",__FUNCTION__,__LINE__,[NSString stringWithFormat:(s), ##__VA_ARGS__])
+
+#endif /* HqiOSDevelop_Prefix_pch */
