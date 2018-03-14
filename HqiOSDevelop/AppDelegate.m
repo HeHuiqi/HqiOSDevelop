@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import <stdlib.h>
-#import <malloc/malloc.h>
+//#import <stdlib.h>
+//#import <malloc/malloc.h>
 @interface AppDelegate ()
 
 @end
@@ -18,11 +18,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-//    void *hq_zone = calloc(1, 1);
-    
-    uuid_t h_uuid;
-    uuid_generate(h_uuid);
-    NSLog(@"h_uuid===%@",[NSString stringWithCString:h_uuid encoding:NSNonLossyASCIIStringEncoding]);
     
 
     
