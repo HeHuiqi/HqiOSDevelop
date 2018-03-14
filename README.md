@@ -1,4 +1,6 @@
 # HqiOSDevelop
+## [简书主页]( https://www.jianshu.com/u/b37773b21ff3)
+
 
 ## 项目简介
 这是一个iOS开发知识点的实践的一个项目，还在丰富中
