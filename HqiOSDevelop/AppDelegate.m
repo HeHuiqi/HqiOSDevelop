@@ -7,8 +7,7 @@
 //
 
 #import "AppDelegate.h"
-//#import <stdlib.h>
-//#import <malloc/malloc.h>
+
 @interface AppDelegate ()
 
 @end
